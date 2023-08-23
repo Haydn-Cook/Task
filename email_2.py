@@ -41,15 +41,13 @@ def populate_inbox():
     email_1 = Email("john11@gmail.com" , "This is a test email hope it works" , "If you are getting this email then the test is succesful welldone bro!")
     email_2 = Email("Bro123@gmail.com" , "Yo bro" , "Yo bro hope that you are getting this email!")
     email_3 = Email("GigaBro@giga.com" , "Giaga email" , "Giga bro here with the giga email")
-    Inbox.append(email_1)
-    Inbox.append(email_2)
-    Inbox.append(email_3)
+    Inbox.extend([email_1, email_2, email_3])
 
 def send_email():
 
     # Create an email to 'send'/add to the outbox list.
     sent_email_1 = Email("KimCook99@gmail.com" , "Hello There" , "Hello there")
-    Outbox.append(sent_email_1)
+    Outbox.extend(sent_email_1)
 
 def list_emails():
 
