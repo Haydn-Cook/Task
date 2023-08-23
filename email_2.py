@@ -129,6 +129,10 @@ menu = True
 
 while True:
     user_choice = int(input('''\nWould you like to:
+
+    Choose a number based on the action you would like to perform:
+    eg: If you want to read a email type 1 and follow further instructions.                                               
+
     1. Read an email
     2. Mark an email as spam
     3. Delete an email
